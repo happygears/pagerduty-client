@@ -140,10 +140,16 @@ subprojects {
             }
           }
           scm {
-            connection = 'scm:git:git@github.com:comodal/pagerduty-client.git'
+            connection = 'scm:git:git@github.com:happygears/pagerduty-client.git'
             url = project.vcsUrl
           }
         }
+      }
+    }
+    repositories {
+      maven {
+        // change to point to your repo, e.g. http://my.org/repo
+        url = "$buildDir/../../../mvn-repo"
       }
     }
   }
